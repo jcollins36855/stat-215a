@@ -846,7 +846,7 @@ def fit_decision_tree(df_tree, target="Clinically-Important_TBI",
     model = DecisionTreeClassifier(max_depth=max_depth, random_state=0)
     model.fit(X, y)
 
-    fig, ax = plt.subplots(figsize=(10, 8))
+    fig, ax = plt.subplots(figsize=(11, 8))
     artists = plot_tree(model, feature_names=predictors, class_names=["No ciTBI", "ciTBI"],
                          filled=True, fontsize=9, ax=ax)
 
