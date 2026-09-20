@@ -1,0 +1,288 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{kuppermann_identification_2009}{article}{}{}
+      \name{author}{32}{}{%
+        {{hash=c9bb14e0160bc8c99648d027f4c51592}{%
+           family={Kuppermann},
+           familyi={K\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2ea95171f0382914dd5b83d2c01be1d3}{%
+           family={Holmes},
+           familyi={H\bibinitperiod},
+           given={James\bibnamedelima F},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=a249e82e0caad0dd6e41f3bd2cf8ea21}{%
+           family={Dayan},
+           familyi={D\bibinitperiod},
+           given={Peter\bibnamedelima S},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=0f4bfef565179f0044c23e49f52854ee}{%
+           family={Hoyle},
+           familyi={H\bibinitperiod},
+           given={John\bibnamedelima D},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=8863fe451cec92cccabebcee172252ea}{%
+           family={Atabaki},
+           familyi={A\bibinitperiod},
+           given={Shireen\bibnamedelima M},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3aad12f8be2a00a9c2e5b612638fae6f}{%
+           family={Holubkov},
+           familyi={H\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9e0378252d179a6fb220f6cc94bd7a45}{%
+           family={Nadel},
+           familyi={N\bibinitperiod},
+           given={Frances\bibnamedelima M},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4c359d146987c55ec6913fca011b8101}{%
+           family={Monroe},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=4af231ff8a6151776fc7ba7856d457ff}{%
+           family={Stanley},
+           familyi={S\bibinitperiod},
+           given={Rachel\bibnamedelima M},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=811a92326ab4477cdee33e3273308205}{%
+           family={Borgialli},
+           familyi={B\bibinitperiod},
+           given={Dominic\bibnamedelima A},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d4b25229744416ce8158bf542707fe98}{%
+           family={Badawy},
+           familyi={B\bibinitperiod},
+           given={Mohamed\bibnamedelima K},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1f9ab7125ef8209a91123ebe5e4c5056}{%
+           family={Schunk},
+           familyi={S\bibinitperiod},
+           given={Jeff\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=df5959ee5c92f1b1e3044de5ae9ba09b}{%
+           family={Quayle},
+           familyi={Q\bibinitperiod},
+           given={Kimberly\bibnamedelima S},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=7b720360d8a2b3e414c2676bc6b7e8a8}{%
+           family={Mahajan},
+           familyi={M\bibinitperiod},
+           given={Prashant},
+           giveni={P\bibinitperiod}}}%
+        {{hash=12b6bb3b6733210c0ef9636ccdc6e426}{%
+           family={Lichenstein},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6b1b7cda230c8aab0ef29c8285f6290a}{%
+           family={Lillis},
+           familyi={L\bibinitperiod},
+           given={Kathleen\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5eba1adf2e40421f6108a8f5ded135b5}{%
+           family={Tunik},
+           familyi={T\bibinitperiod},
+           given={Michael\bibnamedelima G},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=39b1df2532080c6abea4d2af1985452d}{%
+           family={Jacobs},
+           familyi={J\bibinitperiod},
+           given={Elizabeth\bibnamedelima S},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b0d55a6a76462646c5b230e035ad42a7}{%
+           family={Callahan},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=48ed4d9e3d552f897002e4340441fcaf}{%
+           family={Gorelick},
+           familyi={G\bibinitperiod},
+           given={Marc\bibnamedelima H},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a504607c0a60e50591ba5b97210a3ef8}{%
+           family={Glass},
+           familyi={G\bibinitperiod},
+           given={Todd\bibnamedelima F},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=92d261e0f6a07f8cdbde82df9f537df6}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Lois\bibnamedelima K},
+           giveni={L\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=2beda235222f7d7391535f813ea77a09}{%
+           family={Bachman},
+           familyi={B\bibinitperiod},
+           given={Michael\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4769237dbc4b0664504ddeb301b03b91}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=27533ff386602739db4fbcfa5917a448}{%
+           family={Powell},
+           familyi={P\bibinitperiod},
+           given={Elizabeth\bibnamedelima C},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=58a265c7d2df87a2e5539ecf964fb3c5}{%
+           family={Gerardi},
+           familyi={G\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3dda5cc5d881c64505c03fcd17769f2b}{%
+           family={Melville},
+           familyi={M\bibinitperiod},
+           given={Kraig\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=258f44f814a09bb6e5dfac702dbe693c}{%
+           family={Muizelaar},
+           familyi={M\bibinitperiod},
+           given={J\bibnamedelima Paul},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a816ee429859962b123a5650d8b2c8ee}{%
+           family={Wisner},
+           familyi={W\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=1f339ff596bb0c2ce983b4615f7813b2}{%
+           family={Zuspan},
+           familyi={Z\bibinitperiod},
+           given={Sally\bibnamedelima Jo},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7aff317ac3464aa294f12d5f0011af9d}{%
+           family={Dean},
+           familyi={D\bibinitperiod},
+           given={J\bibnamedelima Michael},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7fef03dadf1249a999f4774d1e482285}{%
+           family={Wootton-Gorges},
+           familyi={W\bibinithyphendelim G\bibinitperiod},
+           given={Sandra\bibnamedelima L},
+           giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1482c927ff66297cfd69f28d854d0dae}
+      \strng{fullhash}{aa1d2cd9d3f5b4e77871be2eca5b7d2c}
+      \strng{fullhashraw}{aa1d2cd9d3f5b4e77871be2eca5b7d2c}
+      \strng{bibnamehash}{1482c927ff66297cfd69f28d854d0dae}
+      \strng{authorbibnamehash}{1482c927ff66297cfd69f28d854d0dae}
+      \strng{authornamehash}{1482c927ff66297cfd69f28d854d0dae}
+      \strng{authorfullhash}{aa1d2cd9d3f5b4e77871be2eca5b7d2c}
+      \strng{authorfullhashraw}{aa1d2cd9d3f5b4e77871be2eca5b7d2c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background CT imaging of head-injured children has risks of radiation-induced malignancy. Our aim was to identify children at very low risk of clinically-important traumatic brain injuries (ciTBI) for whom CT might be unnecessary.}
+      \field{title}{Identification of children at very low risk of clinically-important brain injuries after head trauma: a prospective cohort study}
+      \field{year}{2009}
+      \verb{file}
+      \verb PDF:/Users/mattheweichner/Zotero/storage/IK3WBH4H/Kuppermann et al. - Identification of children at very low risk of clinically-important brain injuries after head trauma.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Teasdale1974}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6a433dc951d69279930105101bb8b72a}{%
+           family={Teasdale},
+           familyi={T\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3a665700d006da97b2f051bd9edc6cc4}{%
+           family={Jennett},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{65612cbedc1914c706102768da632374}
+      \strng{fullhash}{65612cbedc1914c706102768da632374}
+      \strng{fullhashraw}{65612cbedc1914c706102768da632374}
+      \strng{bibnamehash}{65612cbedc1914c706102768da632374}
+      \strng{authorbibnamehash}{65612cbedc1914c706102768da632374}
+      \strng{authornamehash}{65612cbedc1914c706102768da632374}
+      \strng{authorfullhash}{65612cbedc1914c706102768da632374}
+      \strng{authorfullhashraw}{65612cbedc1914c706102768da632374}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Lancet}
+      \field{month}{7}
+      \field{number}{7872}
+      \field{title}{Assessment of coma and impaired consciousness. A practical scale}
+      \field{volume}{2}
+      \field{year}{1974}
+      \field{pages}{81\bibrangedash 84}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/s0140-6736(74)91639-0
+      \endverb
+    \endentry
+    \entry{yu2024veridical}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=43d22dc81cc0e5bb1d24d5eeb65ecbae}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Bin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=957049832e6b7061c65693bf66be2ce2}{%
+           family={Barter},
+           familyi={B\bibinitperiod},
+           given={Rebecca\bibnamedelima L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{fullhash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{fullhashraw}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{bibnamehash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{authorbibnamehash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{authornamehash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{authorfullhash}{614167d3d0b354405ac32d2e467fd18b}
+      \strng{authorfullhashraw}{614167d3d0b354405ac32d2e467fd18b}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780262049191}
+      \field{title}{Veridical Data Science: The Practice of Responsible Data Analysis and Decision Making}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://vdsbook.com
+      \endverb
+      \verb{url}
+      \verb https://vdsbook.com
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
