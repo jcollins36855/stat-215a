@@ -22,11 +22,32 @@ Whats in this file:
     dataframe indicating if there were any flagged entries and 
     displays the column where the flagged entry exists.
 
-4   The cleaning funciton gets to work checking that there are no duplicate
-    rows and dropping them if they exist. Columns are renamed. Data
-    exploration reveiled that there were float and integer types in the
-    set. Since there is no need for a float value, they are all set to
-    integers. Violations are checked and printed.
+4   impute_parent_child_empirical fills in missing child values for rows
+    where the parent is active, by sampling from the empirical joint
+    distribution of child responses among complete cases sharing the
+    same parent value. This is used inside clean_data to address the
+    NaN-under-active-parent cases found during the parent/child check.
+
+5   generate_modeling_variants takes the cleaned dataframe and produces
+    two modeling-ready versions: df_tree, which preserves 92 as its own
+    category (for tree-based models), and df_linear, which recodes
+    structural 92s and NaNs to 0 (for linear models like logistic
+    regression).
+
+6   fit_logistic_regression and fit_decision_tree each fit one of the
+    two classification models used in Part 2, predicting ciTBI from six
+    of Kuppermann et al.'s core clinical predictors, and plot the
+    resulting coefficients / tree structure.
+
+7   Several plotting functions (employee_missingness_plot,
+    plot_skull_fracture_citbi_by_age, plot_predictor_correlation_matrix)
+    generate the figures used in the EDA and findings sections.
+
+8   clean_data ties everything together: it checks for missing/disguised
+    values, drops duplicate rows, renames columns, casts to nullable
+    Int64, audits parent/child skip-logic, imputes missing child values
+    via impute_parent_child_empirical, and optionally restricts the data
+    to GCS >= 14 (matching Kuppermann et al.'s inclusion criteria).
 
 """
 
@@ -879,11 +900,14 @@ def fit_decision_tree(df_tree, target="Clinically-Important_TBI",
 
 ##################################################################################3
 
-def clean_data(df, verbose=True):
+def clean_data(df, apply_gcs_filter=True, verbose=True):
     """
     Clean the pud dataframe. Runs check_missing on the raw data, then
-    drops duplicates, renames columns, casts to nullable Int64, and runs
-    check_parent_child_logic on the renamed data.
+    drops duplicates, renames columns, casts to nullable Int64, runs
+    check_parent_child_logic on the renamed data, imputes missing child
+    values for active parents using impute_parent_child_empirical, and
+    optionally restricts to lower-severity patients (GCS >= 14), matching
+    Kuppermann et al.'s inclusion criteria.
     """
     df = df.copy()
 
@@ -912,13 +936,35 @@ def clean_data(df, verbose=True):
     # 4. Cast to nullable integer dtype (keeps real NaNs alongside ints).
     df = df.astype("Int64")
 
-    # 5. Validate parent/child skip-logic on the renamed data — report only.
+    # 5. Validate parent/child skip-logic on the renamed data — report only,
+    #    diagnostic snapshot BEFORE imputation.
     if verbose:
-        print("\nParent/child skip-logic check:")
+        print("\nParent/child skip-logic check (before imputation):")
     violations = check_parent_child_logic(df, verbose=verbose)
     n_violations = sum(len(v) for v in violations.values())
     if n_violations and verbose:
         print(f"\nWARNING: {n_violations} total skip-logic violations found across all groups.")
+
+    # 6. Impute missing child values for active parents, using the empirical
+    #    joint distribution of complete cases (see impute_parent_child_empirical).
+    #    Loss_of_Consciousness_History allows an additional active value (2 = Suspected).
+    if verbose:
+        print("\nImputing missing child values for active parents...")
+    for parent_col, child_cols in PARENT_CHILD_MAP.items():
+        if parent_col not in df.columns:
+            continue
+        valid_children = [c for c in child_cols if c in df.columns]
+        if not valid_children:
+            continue
+        active_vals = [1, 2] if parent_col == "Loss_of_Consciousness_History" else [1]
+        df = impute_parent_child_empirical(
+            df, parent_col, valid_children, active_parent_vals=active_vals
+        )
+
+    # 7. Optionally restrict to GCS >= 14, matching Kuppermann et al.'s
+    #    inclusion criteria (see Reality Check discussion).
+    if apply_gcs_filter:
+        df = filter_low_severity(df, verbose=verbose)
 
     return df
 
