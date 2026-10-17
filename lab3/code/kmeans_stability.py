@@ -46,7 +46,7 @@ def load_binary_ling(path):
 
 
 def similarity_onepair(X, k, m, seed, n_init=1):
-    """One (k, i) pass of Algorithm 1: returns the similarity of two subsample clusterings."""
+    """One pass of Algorithm 1 to get the similarity of two subsample clusterings."""
     rng = np.random.default_rng(seed)
     n_people = X.shape[0]
     n_sub = int(round(m * n_people))

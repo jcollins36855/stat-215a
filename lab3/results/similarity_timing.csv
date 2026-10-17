@@ -1,0 +1,33 @@
+m,q,implementation,seconds
+0.2,1825,"Naive matrix (NumPy, O(q^2) memory)",0.008552999997239871
+0.2,1825,"Pair loop (Numba, O(q^2))",0.0009896522725202058
+0.2,1825,"Contingency (pure Python, O(q))",0.0005261731956912608
+0.2,1825,"Contingency (NumPy, O(q))",1.821381388813839e-05
+0.2,1825,"Contingency (Numba, O(q)) - final",6.35241036710867e-06
+0.3,4117,"Naive matrix (NumPy, O(q^2) memory)",0.03488910000305623
+0.3,4117,"Pair loop (Numba, O(q^2))",0.004971960000693798
+0.3,4117,"Contingency (pure Python, O(q))",0.0012808575759691214
+0.3,4117,"Contingency (NumPy, O(q))",2.641027027936149e-05
+0.3,4117,"Contingency (Numba, O(q)) - final",9.425314458683075e-06
+0.4,7291,"Naive matrix (NumPy, O(q^2) memory)",0.1078173000132665
+0.4,7291,"Pair loop (Numba, O(q^2))",0.01580988333444111
+0.4,7291,"Contingency (pure Python, O(q))",0.0021793500000057975
+0.4,7291,"Contingency (NumPy, O(q))",3.690671232331238e-05
+0.4,7291,"Contingency (Numba, O(q)) - final",1.288864942402686e-05
+0.5,11269,"Naive matrix (NumPy, O(q^2) memory)",0.2677937000116799
+0.5,11269,"Pair loop (Numba, O(q^2))",0.0375256000115769
+0.5,11269,"Contingency (pure Python, O(q))",0.003498181818444705
+0.5,11269,"Contingency (NumPy, O(q))",5.2609021121621735e-05
+0.5,11269,"Contingency (Numba, O(q)) - final",1.7948042010486396e-05
+0.6,16277,"Pair loop (Numba, O(q^2))",0.07828289997996762
+0.6,16277,"Contingency (pure Python, O(q))",0.005047362499681185
+0.6,16277,"Contingency (NumPy, O(q))",6.886798679627318e-05
+0.6,16277,"Contingency (Numba, O(q)) - final",2.3271545090391476e-05
+0.7,22147,"Pair loop (Numba, O(q^2))",0.14854059999925084
+0.7,22147,"Contingency (pure Python, O(q))",0.007065392307525214
+0.7,22147,"Contingency (NumPy, O(q))",8.990142048953038e-05
+0.7,22147,"Contingency (Numba, O(q)) - final",3.234962217265773e-05
+0.8,28880,"Pair loop (Numba, O(q^2))",0.25747330000740476
+0.8,28880,"Contingency (pure Python, O(q))",0.009112739999545738
+0.8,28880,"Contingency (NumPy, O(q))",0.00011625241159185935
+0.8,28880,"Contingency (Numba, O(q)) - final",4.336278147791938e-05
